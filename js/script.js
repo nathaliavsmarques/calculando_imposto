@@ -3,12 +3,12 @@ let btn = document.querySelector('#btn');
 let text = document.querySelector('#text');
 const tax = 0.6;
 
-btn.addEventListener('click', function calcular() {
+btn.addEventListener('click', function() {
     let taxOnProduct = parseFloat(productPrice.value) * tax;
     let totalPrice = parseFloat(productPrice.value) + (parseFloat(productPrice.value) * tax);
 
     if (productPrice.value <= 0) {
-        window.alert('ERRO! Por favor preencha com um valor válido!');
+        window.alert('Por favor preencha com um valor válido!');
     } else if (productPrice.value <= 150) {
         text.innerHTML = `Seu produto não será taxado.`;
         text.style.backgroundColor = '#11F05F';
