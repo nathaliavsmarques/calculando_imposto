@@ -4,28 +4,30 @@
 
 * {
     font-family: 'Chivo Mono', monospace;
+    
 }
 
 body {
-    background-color: #030849e1;
+    height: 100vh;
+    background-image: linear-gradient(to bottom,rgb(133,144,157),rgb(16,17,19)  );
 }
 
 #title {
-    font-size: 2.5rem;
-    font-weight: 100;
-    color:  rgb(165, 164, 164);
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 600;
     text-align: center;
     padding-top: 1.3rem;
 }
 
 #wrap {
-    background-color:  rgb(165, 164, 164) ;
+    background-color: rgba(152, 161, 172, 0.863) ;
     line-height: 2rem;
     max-width: 50rem;
     padding: 1rem;
     margin: 0rem 0.8rem;   
     border-radius: 1.5rem;
-    box-shadow: 2px 3px 4px 4px black;
+    box-shadow: 5px 5px 10px 5px black;
 
 }
 
@@ -46,9 +48,11 @@ body {
 }
 
 #btn {
+    background-color:rgb(180,187,195);
+    text-transform: uppercase;
     width: 10rem;
     height: 1.8rem;
-    border: transparent;
+    border: none;
     border-radius: 10px;
     display: block;
     margin: auto;
@@ -56,8 +60,9 @@ body {
 }
 
 #btn:hover {
-    background-color: #030849e1;
-    color: rgb(165, 164, 164);
+    background-color: rgb(16,17,19);
+    color: rgb(180,187,195);
+    cursor: pointer;
 }
 
 #text {
